@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 BookReader
 
-## Getting Started
+## Om prosjektet
 
-First, run the development server:
+BookReader er en webapplikasjon for å organisere og lese e-bøker.
+Applikasjonen fungerer som et personlig bibliotek der brukere kan legge til egne bøker og lese dem i nettleseren.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Prosjektet består av:
+
+* En **frontend** laget med Next.js
+* En **backend/server** laget med NestJS
+* En mappe som inneholder bøker som serveren skanner automatisk
+
+Serveren finner bøker i en mappe og gjør dem tilgjengelige via et API.
+
+---
+
+# Funksjoner
+
+* Skanner en mappe etter bøker
+* Viser en liste over tilgjengelige bøker
+* API for å hente bøker
+* Webgrensesnitt for brukere
+
+Planlagte funksjoner:
+
+* Leser for EPUB og PDF
+* Brukerinnlogging
+* Leseprogresjon
+* Metadata for bøker (tittel, forfatter osv.)
+
+---
+
+# Teknologi brukt
+
+Frontend:
+
+* Next.js
+* React
+
+Backend:
+
+* NestJS
+* Node.js
+* TypeScript
+
+Andre verktøy:
+
+* GitHub
+* Git
+* NPM
+
+---
+
+# Prosjektstruktur
+
+```
+bookreader
+│
+├ client        # frontend (Next.js)
+├ server        # backend (NestJS)
+│
+└ books         # bøker som serveren leser
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Hvordan kjøre prosjektet
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 1. Installer Node.js
 
-## Learn More
+Last ned Node.js fra:
+https://nodejs.org
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 2. Last ned prosjektet
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+git clone https://github.com/brukernavn/bookreader.git
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 3. Start serveren
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Gå til server-mappen:
+
+```
+cd server
+npm install
+npm run start:dev
+```
+
+Serveren starter på:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 4. Start klienten
+
+Åpne en ny terminal:
+
+```
+cd client
+npm install
+npm run dev
+```
+
+Frontend starter på:
+
+```
+http://localhost:3001
+```
+
+---
+
+# Hvordan legge til bøker
+
+Legg bøker i mappen:
+
+```
+server/books
+```
+
+Serveren vil automatisk finne bøker med filtyper som:
+
+* .epub
+* .pdf
+
+---
+
+# Lovlig bruk
+
+Dette prosjektet er laget som et personlig bibliotekssystem.
+Brukere må kun legge til bøker de har lovlig tilgang til.
+
+Prosjektet distribuerer ikke opphavsrettsbeskyttet materiale.
+
+---
+
+# Formål med prosjektet
+
+Dette prosjektet er laget som en **prosjektoppgave i IT** og viser ferdigheter innen:
+
+* Programutvikling
+* Serverdrift
+* Brukerstøtte og dokumentasjon
+* Versjonskontroll med GitHub
+
+---
+
