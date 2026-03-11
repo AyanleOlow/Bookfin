@@ -77,7 +77,7 @@ https://nodejs.org
 ## 2. Last ned prosjektet
 
 ```
-git clone https://github.com/brukernavn/bookreader.git
+git clone https://github.com/AyanleOlow/Bookfin.git
 ```
 
 ---
