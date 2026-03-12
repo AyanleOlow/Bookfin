@@ -1,4 +1,4 @@
-# 📚 BookReader
+# BookReader
 
 ## Om prosjektet
 
