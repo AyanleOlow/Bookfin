@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Footer from "./component/footer"
 
 export default function Home() {
 
@@ -18,6 +19,9 @@ export default function Home() {
 
   return (
     <div className="p-6 w-full min-h-screen bg-gray-900 text-white">
+
+
+      <h1 className="text-4xl font-bold mb-5 flex justify-center">welcome to book reader</h1>
 
       <h1 className="text-2xl font-bold mb-4">Select Book Folder</h1>
 
@@ -64,6 +68,8 @@ export default function Home() {
         })}
 
       </div>
+
+        <Footer/>
 
     </div>
   )
